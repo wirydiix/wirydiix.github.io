@@ -1,5 +1,3 @@
-$("#draggable").draggable();
-$("#RP").draggable();
 var RPbtm = document.getElementById("RP-btm");
 var NRPbtm = document.getElementById("NRP-btm");
 var PMbtm = document.getElementById("PM-btm");
@@ -11,3 +9,5 @@ var RP = document.getElementById("RP");
 RPbtm.onclick = function() {
     	RP.classList.remove("hiden");
     }
+$("#draggable").draggable();
+$("#RP").draggable();
