@@ -1,0 +1,49 @@
+html{
+	height: 100%;
+}
+body{
+	height: 95%;
+	display:flex;	
+	flex-direction:column-reverse;
+}
+main{
+	
+height: 5%;
+}
+.chat{
+	border-radius: 20px;
+	width: 20%;
+	height: 45%;
+	background: #393939cc;
+	display: flex;
+	justify-content:center;
+	overflow: hidden;
+	border: 1px solid #000;
+	align-items: center;
+}
+.chat div{	
+	width: 20%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.chat div:nth-last-child{
+
+}
+.chat div:hover{
+	background: #161616cc;
+}
+.chat:hover{
+
+}
+
+.hiden{
+	display: none;
+}
+.message-box{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background: #161616cc;
+}
