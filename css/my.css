@@ -5,6 +5,7 @@ body{
 	height: 95%;
 	display:flex;	
 	flex-direction:column-reverse;
+	color: #fff;
 }
 main{
 	
@@ -26,7 +27,6 @@ height: 5%;
     height: 100%;
     align-items: center;
     text-align: center;
-    color: #fff;
 }
 .chat div:nth-last-child{
 
@@ -42,8 +42,49 @@ height: 5%;
 	display: none;
 }
 .message-box{
+	bottom: 80px;
+	border-radius: 5px;
+	border: 2px solid #000;
 	position: absolute;
 	width: 500px;
 	height: 500px;
 	background: #161616cc;
+
+}
+.message-box div{
+	height: 90%;
+	padding: 15px;
+	display: flex;
+	flex-direction:column-reverse;
+}
+.message-box div div{
+	flex-direction:column;
+}
+.message-box div div div{
+	background: #353535;
+	height: 10%;
+	width: 90%;
+	margin-bottom: 10px;
+}
+.message-box div div div:first-child{
+	margin-top: auto;
+	
+}
+.button-close{
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #41414100;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+.button-close:hover{
+	background: #3b3b3b;
+	color: red;
+}
+.button-close:focus{
+	background: #3b3b3b;
+	color: red;
+	outline:none;
 }
