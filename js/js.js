@@ -1,5 +1,5 @@
 $("#draggable").draggable();
-$("#RP").draggable();
+$("#chat").draggable();
 
 
 var RPbtm = document.getElementById("RP-btm");

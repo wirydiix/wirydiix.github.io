@@ -7,58 +7,48 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css"  href="css/my.css" >
 </head>
-<div class="message-box hiden" id="RP">
-	<button class="button-close" id="button-close-rp" type="button">X</button>
-	<div>
-		<div>
-			<div>
-				1
-			</div>
-			<div>
-				2
-			</div>
-			<div>
-				3
-			</div>
-			<div>
-				4
-			</div>
-			<div>
-				1
-			</div>
-			<div>
-				2
-			</div>
-			<div>
-				3
-			</div>
-			<form>
-				<textarea cols="50" rows="2"></textarea>
-				<button>></button>
-			</form>
-		</div>
-	</div>
-</div>
+
 <body>
 
-<main>
+	<main>
+		<div class="chat" id="chat">
+			<div class="message-box" id="message-box">
+				
+				<div class="message-box-content" id="message-box-content">
+					<div class="message-content">
+						<div class="tag">Black Fox</div>
+						<div class="name">DiiX</div>
+						<div class="message">Всех приветсвую!</div>
+					</div>
+				</div>
+			</div>
+			<div class="comment-inner">
+				<form  method="post" class="comment-form">
+              		<input type="text" class="comment-body" value="" placeholder="Для смены канала нажмите Tab" required id="comment-body">
+              		<button class="button" type="submit" id="comment-add">
+              			<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4275 1.0841C13.5918 1.24834 13.6474 1.49216 13.5707 1.71139L9.54976 13.1997C9.46786 13.4337 9.25141 13.594 9.0037 13.6041C8.75599 13.6142 8.52721 13.4721 8.42652 13.2456L6.2233 8.28832L1.26606 6.0851C1.03951 5.98441 0.897382 5.75563 0.907488 5.50792C0.917594 5.26021 1.07789 5.04376 1.31189 4.96186L12.8002 0.940945C13.0195 0.864212 13.2633 0.919851 13.4275 1.0841ZM7.40258 7.96414L8.91218 11.3607L11.554 3.81275L7.40258 7.96414ZM10.6989 2.95765L3.15088 5.59944L6.54748 7.10904L10.6989 2.95765Z" fill="#F0DE5C"/>
+						</svg>
+					</button>
+              	</form>
+            </div>
+			<div class="button-chat">
+				<div>IC</div>
+				<div>OOC</div>
+				<div>ME</div>
+				<div>DO</div>
+				<div>PM</div>
+				<div>REPORT</div>
+			</div>
+		</div>
 
-	<div class="chat" id="draggable">
-		<div id="RP-btm">
-			RP
-		</div>
-		<div id="NRP-btm">
-			NRP
-		</div>
-		<div id="PM-btm">
-			PM
-		</div>
-		<div id="Help-btm">
-			Help
-		</div>
-	</div>
-	
-</main>
+		
+	</main>
 <script src="js/js.js"></script>
+<script src="js/coments.js"></script>
+<script type="text/javascript">
+   var block = document.getElementById("message-box-content");
+  block.scrollTop = block.scrollHeight;
+</script>
 </body>
 </html>

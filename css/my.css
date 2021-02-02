@@ -1,90 +1,135 @@
-html{
-	height: 100%;
-}
 body{
-	height: 95%;
-	display:flex;	
-	flex-direction:column-reverse;
-	color: #fff;
-}
-main{
-	
-height: 5%;
-}
-.chat{
-	border-radius: 20px;
-	width: 20%;
-	height: 45%;
-	background: #393939cc;
-	display: flex;
-	justify-content:center;
-	overflow: hidden;
-	border: 1px solid #000;
-	align-items: center;
-}
-.chat div{	
-	width: 20%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-}
-.chat div:nth-last-child{
-
-}
-.chat div:hover{
-	background: #161616cc;
-}
-.chat:hover{
-
-}
-
-.hiden{
-	display: none;
+	background: url(https://staticdelivery.nexusmods.com/images/110/332644-1434453893.jpg);
 }
 .message-box{
-	bottom: 80px;
-	border-radius: 5px;
-	border: 2px solid #000;
-	position: absolute;
-	width: 500px;
-	height: 500px;
-	background: #161616cc;
+	width: 539px;
+	height: 245px;
+	left: 30px;
+	top: 30px;
 
+	/* Radial1 */
+
+	background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(36, 36, 36, 0.85) 0.01%, rgba(0, 0, 0, 0.78) 100%);
+	border: 1px solid #F0DE5C;
+	box-sizing: border-box;
+
+	padding: 10px;
 }
 .message-box div{
-	height: 90%;
-	padding: 15px;
+	margin: 10px;
+}
+.message-box div li{
+	margin: 10px;
+}
+.message-content div{
+	margin: 0;
+}
+.chat{
+
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+
+	color: #fff;
+}
+.comment-body{
+	margin-top: 15px;
+
+	width: 539px;
+	height: 30px;
+
+
+	/* Usual1 */
+
+	background: rgba(14, 14, 14, 0.85);
+	border: 1px solid #F0DE5C;
+	box-sizing: border-box;
+
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+
+	color: #fff;
+
+	padding-right: 30px;
+}
+.tag , .name, .message{
+	display: inline;
+}
+.tag:after{
+	content:"]";
+}
+.tag:before{
+	content:"[";
+}
+.name:after{
+	content: ":";
+}
+.button-chat{
 	display: flex;
-	flex-direction:column-reverse;
+	flex-direction: row;
 }
-.message-box div div{
-	flex-direction:column;
+.button-chat div{
+	margin-right: 10px;
+	padding: 3px;
+	background: rgba(14, 14, 14, 0.85);
+	margin-top: 10px;
+
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
 }
-.message-box div div div{
-	background: #353535;
-	height: 10%;
-	width: 90%;
-	margin-bottom: 10px;
+#userName{
+	color: #ffda95;
 }
-.message-box div div div:first-child{
-	margin-top: auto;
-	
-}
-.button-close{
-	position: absolute;
-    right: 5px;
-    top: 5px;
-    background: #41414100;
-    color: #fff;
-    box-shadow: none;
+.comment-inner button{
+	background: none;
     border: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -30px;
 }
-.button-close:hover{
-	background: #3b3b3b;
-	color: red;
+.BlackFox{
+	color: #ffbc6a;
 }
-.button-close:focus{
-	background: #3b3b3b;
-	color: red;
-	outline:none;
+.message-box-content{
+	overflow: overlay;
+    height: 100%;
+}
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
 }
